@@ -27,7 +27,7 @@ class ArticleRequest extends FormRequest
             'title'             =>  'required',
             'author'            =>  'required',
             'category_id'       =>  'required',
-            'featured_image'    =>  'required',
+            'featured_image'    =>  'image|file|max:1024',
             'content'           =>  'required',
         ];
     }
